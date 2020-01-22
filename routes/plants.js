@@ -33,6 +33,7 @@ router.get('/:id', getPlant, (req, res) => {
 
 // Create one plant
 router.post('/', async (req, res) => {
+  console.log('here')
   const plant = new Plant({
     id: req.body.id,
     name: req.body.name,
@@ -41,10 +42,13 @@ router.post('/', async (req, res) => {
     description: req.body.description,
   })
 
+  console.log('here here!')
+
   try {
     const newPlant = await plant.save()
     res.status(201).json(newPlant)
   } catch (err) {
+    console.log('error', err)
     res.status(400).json({ message: err.message })
   }
 })

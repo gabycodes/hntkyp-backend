@@ -1,0 +1,37 @@
+
+// get all
+GET http://localhost:3000/plants
+
+###
+
+// create one
+POST http://localhost:3000/plants
+Content-Type: application/json
+
+{
+  "name": "Plantieee",
+  "id": "9",
+  "latinName": "lsnvls",
+  "imgUrl": "lsnvls",
+  "description": "lsnvls"
+}
+
+###
+
+// get one
+GET http://localhost:3000/plants/5e28b8d051444392ff1b5037
+
+###
+
+// delete one
+DELETE http://localhost:3000/plants/5e28b9951bcf33930f28b673
+
+###
+
+// update one
+PATCH http://localhost:3000/plants/5e28b9951bcf33930f28b673
+Content-Type: application/json 
+
+{
+  "name": "Plont"
+}

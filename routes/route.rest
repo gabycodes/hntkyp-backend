@@ -1,15 +1,15 @@
 
 // get all
-GET http://localhost:3000/plants
+GET http://localhost:8080/plants
 
 ###
 
 // create one
-POST http://localhost:3000/plants
+POST http://localhost:8080/plants
 Content-Type: application/json
 
 {
-  "name": "Plantieee",
+  "name": "TEST",
   "id": "9",
   "latinName": "lsnvls",
   "imgUrl": "lsnvls",
@@ -19,19 +19,19 @@ Content-Type: application/json
 ###
 
 // get one
-GET http://localhost:3000/plants/5e28b8d051444392ff1b5037
+GET http://localhost:8080/plants/5e28bc72d637549723e157a9
 
 ###
 
 // delete one
-DELETE http://localhost:3000/plants/5e28b9951bcf33930f28b673
+DELETE http://localhost:8080/plants/5e28bc72d637549723e157a9
 
 ###
 
 // update one
-PATCH http://localhost:3000/plants/5e28b9951bcf33930f28b673
+PATCH http://localhost:8080/plants/5e28bc72d637549723e157a9
 Content-Type: application/json 
 
 {
-  "name": "Plont"
+  "name": "testAH"
 }

@@ -16,6 +16,6 @@ app.use('/plants', hntkypRouter)
 
 var router = express.Router();
 
-app.listen(3000, () => console.log('server started'))
+app.listen(8080, () => console.log('server started'))
 
 module.exports = router
